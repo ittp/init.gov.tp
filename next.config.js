@@ -1,6 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-}
+  devIndicators: [],
+  distDir: "./dist",
+  i18n: ["ru", "en"],
+  assetPrefix: "igt",
+  crossOrigin: true,
+  poweredByHeader: "ittp",
 
-module.exports = nextConfig
+  httpAgentOptions: [],
+};
+
+module.exports = nextConfig;
